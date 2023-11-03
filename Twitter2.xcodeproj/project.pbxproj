@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		2CDCAB162AF532000094B0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB152AF532000094B0A9 /* AppDelegate.swift */; };
-		2CDCAB182AF532000094B0A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB172AF532000094B0A9 /* SceneDelegate.swift */; };
 		2CDCAB1A2AF532000094B0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB192AF532000094B0A9 /* ViewController.swift */; };
 		2CDCAB1D2AF532000094B0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDCAB1B2AF532000094B0A9 /* Main.storyboard */; };
 		2CDCAB1F2AF532010094B0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CDCAB1E2AF532010094B0A9 /* Assets.xcassets */; };
 		2CDCAB222AF532010094B0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDCAB202AF532010094B0A9 /* LaunchScreen.storyboard */; };
+		2CDCAB2B2AF532B40094B0A9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB2A2AF532B40094B0A9 /* Post.swift */; };
+		2CDCAB2E2AF5336C0094B0A9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB2D2AF5336C0094B0A9 /* FeedViewController.swift */; };
+		2CDCAB322AF534450094B0A9 /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB312AF534450094B0A9 /* FeedPostCell.swift */; };
+		2CDCAB352AF534A10094B0A9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2CDCAB342AF534A10094B0A9 /* SnapKit */; };
+		2CDCAB372AF534A10094B0A9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2CDCAB362AF534A10094B0A9 /* SnapKit-Dynamic */; };
+		2CDCAB3A2AF53C140094B0A9 /* PostsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB392AF53C140094B0A9 /* PostsProvider.swift */; };
+		2CDCAB3D2AF543890094B0A9 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB3C2AF543890094B0A9 /* UITableView+Register.swift */; };
+		2CDCAB3F2AF5439A0094B0A9 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB3E2AF5439A0094B0A9 /* UITableView+Dequeue.swift */; };
+		2CDCAB422AF54A370094B0A9 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB412AF54A370094B0A9 /* EditViewController.swift */; };
+		2CDCAB442AF54F280094B0A9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB432AF54F280094B0A9 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CDCAB122AF532000094B0A9 /* Twitter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CDCAB152AF532000094B0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CDCAB172AF532000094B0A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2CDCAB192AF532000094B0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CDCAB1C2AF532000094B0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CDCAB1E2AF532010094B0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CDCAB212AF532010094B0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CDCAB232AF532010094B0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CDCAB2A2AF532B40094B0A9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2CDCAB2D2AF5336C0094B0A9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2CDCAB312AF534450094B0A9 /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
+		2CDCAB392AF53C140094B0A9 /* PostsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsProvider.swift; sourceTree = "<group>"; };
+		2CDCAB3C2AF543890094B0A9 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		2CDCAB3E2AF5439A0094B0A9 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		2CDCAB412AF54A370094B0A9 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		2CDCAB432AF54F280094B0A9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDCAB352AF534A10094B0A9 /* SnapKit in Frameworks */,
+				2CDCAB372AF534A10094B0A9 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +74,11 @@
 		2CDCAB142AF532000094B0A9 /* Twitter2 */ = {
 			isa = PBXGroup;
 			children = (
+				2CDCAB3B2AF5437D0094B0A9 /* Extensions */,
+				2CDCAB382AF53C050094B0A9 /* Data */,
+				2CDCAB2C2AF533650094B0A9 /* Screens */,
+				2CDCAB292AF532AA0094B0A9 /* Models */,
 				2CDCAB152AF532000094B0A9 /* AppDelegate.swift */,
-				2CDCAB172AF532000094B0A9 /* SceneDelegate.swift */,
 				2CDCAB192AF532000094B0A9 /* ViewController.swift */,
 				2CDCAB1B2AF532000094B0A9 /* Main.storyboard */,
 				2CDCAB1E2AF532010094B0A9 /* Assets.xcassets */,
@@ -65,6 +86,66 @@
 				2CDCAB232AF532010094B0A9 /* Info.plist */,
 			);
 			path = Twitter2;
+			sourceTree = "<group>";
+		};
+		2CDCAB292AF532AA0094B0A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB2A2AF532B40094B0A9 /* Post.swift */,
+				2CDCAB432AF54F280094B0A9 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CDCAB2C2AF533650094B0A9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB402AF54A2E0094B0A9 /* Edit */,
+				2CDCAB2F2AF5342B0094B0A9 /* Feed */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2CDCAB2F2AF5342B0094B0A9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB302AF534340094B0A9 /* View */,
+				2CDCAB2D2AF5336C0094B0A9 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2CDCAB302AF534340094B0A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB312AF534450094B0A9 /* FeedPostCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CDCAB382AF53C050094B0A9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB392AF53C140094B0A9 /* PostsProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2CDCAB3B2AF5437D0094B0A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB3C2AF543890094B0A9 /* UITableView+Register.swift */,
+				2CDCAB3E2AF5439A0094B0A9 /* UITableView+Dequeue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CDCAB402AF54A2E0094B0A9 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB412AF54A370094B0A9 /* EditViewController.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +164,10 @@
 			dependencies = (
 			);
 			name = Twitter2;
+			packageProductDependencies = (
+				2CDCAB342AF534A10094B0A9 /* SnapKit */,
+				2CDCAB362AF534A10094B0A9 /* SnapKit-Dynamic */,
+			);
 			productName = Twitter2;
 			productReference = 2CDCAB122AF532000094B0A9 /* Twitter2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 2CDCAB092AF532000094B0A9;
+			packageReferences = (
+				2CDCAB332AF534A10094B0A9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2CDCAB132AF532000094B0A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +228,14 @@
 			files = (
 				2CDCAB1A2AF532000094B0A9 /* ViewController.swift in Sources */,
 				2CDCAB162AF532000094B0A9 /* AppDelegate.swift in Sources */,
-				2CDCAB182AF532000094B0A9 /* SceneDelegate.swift in Sources */,
+				2CDCAB3D2AF543890094B0A9 /* UITableView+Register.swift in Sources */,
+				2CDCAB3A2AF53C140094B0A9 /* PostsProvider.swift in Sources */,
+				2CDCAB2E2AF5336C0094B0A9 /* FeedViewController.swift in Sources */,
+				2CDCAB442AF54F280094B0A9 /* Profile.swift in Sources */,
+				2CDCAB2B2AF532B40094B0A9 /* Post.swift in Sources */,
+				2CDCAB3F2AF5439A0094B0A9 /* UITableView+Dequeue.swift in Sources */,
+				2CDCAB322AF534450094B0A9 /* FeedPostCell.swift in Sources */,
+				2CDCAB422AF54A370094B0A9 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +402,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "n-saduakhassov.Twitter2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +433,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "n-saduakhassov.Twitter2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +464,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CDCAB332AF534A10094B0A9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CDCAB342AF534A10094B0A9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CDCAB332AF534A10094B0A9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		2CDCAB362AF534A10094B0A9 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CDCAB332AF534A10094B0A9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CDCAB0A2AF532000094B0A9 /* Project object */;
 }
