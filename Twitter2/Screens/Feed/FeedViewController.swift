@@ -4,9 +4,19 @@ import SnapKit
 final class FeedViewController: UIViewController {
     var onPlusButtonTap: (() -> Void)?
     var onEdit: ((_ id: Int, _ text: String) -> Void)?
+    var onAvatar: (() -> Void)?
 
     private lazy var tableView = makeTableView()
     private lazy var plusButton = makePlusButton()
+    private lazy var avatarButton = {
+        let button = UIButton(frame: CGRect(origin: .zero, size: .init(width: 24, height: 24)))
+        button.contentMode = .scaleAspectFill
+        button.setImage(Profile.shared.avatar, for: .normal)
+        button.layer.cornerRadius = 12
+        button.clipsToBounds = true
+        button.addTarget(self, action: #selector(avatarDidTap), for: .touchUpInside)
+        return button
+    }()
 
     private var posts: [Post] = []
 
@@ -22,11 +32,18 @@ final class FeedViewController: UIViewController {
         super.viewDidLoad()
 
         getPosts()
+        let barButton = UIBarButtonItem(customView: avatarButton)
+        navigationItem.leftBarButtonItem = barButton
     }
 
     @objc
     private func plusButtonDidTap() {
         onPlusButtonTap?()
+    }
+
+    @objc
+    private func avatarDidTap() {
+        onAvatar?()
     }
 
     private func getPosts() {
@@ -44,6 +61,9 @@ final class FeedViewController: UIViewController {
             make.trailing.equalToSuperview().offset(-16)
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-16)
             make.size.equalTo(40)
+        }
+        avatarButton.snp.makeConstraints { make in
+            make.size.equalTo(24)
         }
         postsProvider.delegate = self
     }

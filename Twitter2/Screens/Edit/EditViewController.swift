@@ -31,6 +31,7 @@ final class EditViewController: UIViewController {
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: postButton)
         setup()
+        view.backgroundColor = .black
     }
 
     override func viewDidAppear(_ animated: Bool) {

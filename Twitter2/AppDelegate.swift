@@ -33,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         feed.onEdit = { [weak self] id, text in
             self?.presentEdit(id: id, text: text)
         }
+        feed.onAvatar = { [weak self] in
+            self?.presentProfile()
+        }
         navController.setViewControllers([feed], animated: false)
     }
 
@@ -43,6 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         navController.pushViewController(edit, animated: true)
+    }
+
+    private func presentProfile() {
+        let profile = ProfileViewController()
+        profile.onFinish = { [weak self] in
+            self?.navController.popViewController(animated: true)
+        }
+        navController.pushViewController(profile, animated: true)
     }
 }
 

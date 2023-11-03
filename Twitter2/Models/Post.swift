@@ -2,8 +2,9 @@ import UIKit
 
 struct Post {
     let id: Int
+    let authorID: Int
     let avatar: UIImage
-    let name: String
+    var name: String
     var text: String
     let uploadDate: Date
     let image: UIImage?

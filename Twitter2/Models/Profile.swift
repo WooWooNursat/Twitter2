@@ -1,8 +1,9 @@
 import UIKit
 
 struct Profile {
+    let id: Int = 0
     let avatar = UIImage(named: "avatar")!
-    let name = "Nursat"
+    var name = "Nursat"
 
-    static let shared = Profile()
+    static var shared = Profile()
 }

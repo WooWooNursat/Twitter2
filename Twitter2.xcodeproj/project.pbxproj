@@ -22,6 +22,8 @@
 		2CDCAB3F2AF5439A0094B0A9 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB3E2AF5439A0094B0A9 /* UITableView+Dequeue.swift */; };
 		2CDCAB422AF54A370094B0A9 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB412AF54A370094B0A9 /* EditViewController.swift */; };
 		2CDCAB442AF54F280094B0A9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB432AF54F280094B0A9 /* Profile.swift */; };
+		2CDCAB472AF554C00094B0A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB462AF554C00094B0A9 /* ProfileViewController.swift */; };
+		2CDCAB492AF558B20094B0A9 /* ProfileUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCAB482AF558B20094B0A9 /* ProfileUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2CDCAB3E2AF5439A0094B0A9 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		2CDCAB412AF54A370094B0A9 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		2CDCAB432AF54F280094B0A9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		2CDCAB462AF554C00094B0A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2CDCAB482AF558B20094B0A9 /* ProfileUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUpdater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		2CDCAB2C2AF533650094B0A9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2CDCAB452AF554B90094B0A9 /* Profile */,
 				2CDCAB402AF54A2E0094B0A9 /* Edit */,
 				2CDCAB2F2AF5342B0094B0A9 /* Feed */,
 			);
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2CDCAB392AF53C140094B0A9 /* PostsProvider.swift */,
+				2CDCAB482AF558B20094B0A9 /* ProfileUpdater.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -146,6 +152,14 @@
 				2CDCAB412AF54A370094B0A9 /* EditViewController.swift */,
 			);
 			path = Edit;
+			sourceTree = "<group>";
+		};
+		2CDCAB452AF554B90094B0A9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCAB462AF554C00094B0A9 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,11 +241,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CDCAB1A2AF532000094B0A9 /* ViewController.swift in Sources */,
+				2CDCAB492AF558B20094B0A9 /* ProfileUpdater.swift in Sources */,
 				2CDCAB162AF532000094B0A9 /* AppDelegate.swift in Sources */,
 				2CDCAB3D2AF543890094B0A9 /* UITableView+Register.swift in Sources */,
 				2CDCAB3A2AF53C140094B0A9 /* PostsProvider.swift in Sources */,
 				2CDCAB2E2AF5336C0094B0A9 /* FeedViewController.swift in Sources */,
 				2CDCAB442AF54F280094B0A9 /* Profile.swift in Sources */,
+				2CDCAB472AF554C00094B0A9 /* ProfileViewController.swift in Sources */,
 				2CDCAB2B2AF532B40094B0A9 /* Post.swift in Sources */,
 				2CDCAB3F2AF5439A0094B0A9 /* UITableView+Dequeue.swift in Sources */,
 				2CDCAB322AF534450094B0A9 /* FeedPostCell.swift in Sources */,

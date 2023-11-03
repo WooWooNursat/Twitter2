@@ -9,9 +9,14 @@ final class PostsProvider {
 
     static let shared = PostsProvider()
 
+    init() {
+        ProfileUpdater.shared.delegate = self
+    }
+
     private var posts: [Post] = [
         .init(
             id: 0,
+            authorID: 10,
             avatar: UIImage(named: "avatar")!,
             name: "Tengrinews",
             text: "Макрон опубликовал твит на казахском языке",
@@ -49,6 +54,7 @@ final class PostsProvider {
         posts.append(
             Post(
                 id: posts.count,
+                authorID: Profile.shared.id,
                 avatar: Profile.shared.avatar,
                 name: Profile.shared.name,
                 text: text,
@@ -68,6 +74,18 @@ final class PostsProvider {
         }
 
         posts[postIndex].text = text
+        delegate?.didChangePosts()
+    }
+}
+
+extension PostsProvider: ProfileUpdaterDelegate {
+    func didUpdateProfile() {
+        
+        for index in 0..<posts.count {
+            if posts[index].authorID == Profile.shared.id {
+                posts[index].name = Profile.shared.name
+            }
+        }
         delegate?.didChangePosts()
     }
 }
